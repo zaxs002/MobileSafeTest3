@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.wz.mobilesafetest2.activity.Setup1Activity">
+
+    <TextView android:text="5.恭喜您,设置完成"
+        android:background="#30a4ce"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <CheckBox android:id="@+id/cb_setup5_isactivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@id/cb_setup5_isactivation"
+            android:text="选中开启防盗保护:"
+            android:textSize="20sp"
+            android:textColor="#bb000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView android:src="@drawable/step_5"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <View android:background="@android:drawable/presence_invisible"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <View android:background="@android:drawable/presence_invisible"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <View android:background="@android:drawable/presence_invisible"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <View android:background="@android:drawable/presence_invisible"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <View android:background="@android:drawable/presence_online"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <com.wz.mobilesafetest2.view.WaterMelonButton android:onClick="next"
+            android:text="设置完成"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <com.wz.mobilesafetest2.view.WaterMelonButton android:onClick="prev"
+            android:text="上一步"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+</LinearLayout>

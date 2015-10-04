@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.wz.mobilesafetest2.activity.LostFindActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="安全号码"
+            android:textColor="#bb000000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/tv_lostfind_phone"
+            android:text="5555"
+            android:textSize="22sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="防盗保护是否开启"
+            android:textColor="#bb000000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView android:id="@+id/iv_lostfind_lock"
+            android:src="@drawable/unlock"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+    <View android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tv_lostfind_reset"
+            android:text="重新进入设置向导"
+            android:textColor="#bb000000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView android:background="#898989"
+        android:text="功能简介"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:text="GPS追踪:#*location*#"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:text="播放报警音乐:#*alarm*#"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:text="远程数据删除:#*wipedata*#"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:text="远程锁屏:#*lockscreen*#"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

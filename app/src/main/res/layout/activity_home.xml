@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="@drawable/blue_bkg"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/iv_home_logo"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/heima"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iv_home_logo"
+            android:layout_height="match_parent">
+
+            <TextView android:text="西瓜手机安全卫士"
+                android:id="@+id/tv_home_name"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.wz.mobilesafetest2.view.MarqueeTextView
+                android:text="西瓜手机安全卫士!!!西瓜手机安全卫士!!!西瓜手机安全卫士!!!西瓜手机安全卫士!!!"
+                android:textColor="#bbff0000"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView android:id="@+id/iv_home_setting"
+            android:src="@drawable/setting"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:onClick="setting"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/setting_selector"
+            android:scaleType="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_home_items"
+        android:horizontalSpacing="2dp"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp">
+
+    </GridView>
+
+</LinearLayout>

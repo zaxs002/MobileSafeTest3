@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItem">
+
+        <attr name="setting_title" format="string"/>
+
+        <attr name="itebackground">
+            <enum name="first" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="last" value="2"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

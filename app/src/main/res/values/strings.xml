@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">西瓜卫士</string>
+    <string name="sample_device_admin">手机安全卫士相关功能</string>
+    <string name="sample_device_admin_description">手机安全卫士相关功能,请开启</string>
+</resources>
